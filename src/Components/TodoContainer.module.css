@@ -54,7 +54,12 @@ section {
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+.homeP{
+  display:contents;               /* Use flexbox layout */
+  justify-content: center;      /* Center horizontally */
+  align-items: center;          /* Center vertically */
+  height: 100vh;                /* Set height to full viewport */
+  text-align: center;        }
 
 button {
   background-color: #757de9;

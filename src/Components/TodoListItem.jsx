@@ -1,13 +1,13 @@
 import styles from "./TodoListItem.module.css"
 import PropTypes from 'prop-types';
 
-export default function TodoListItem({todo , onRemoveTodo , id}){
+export default function TodoListItem({todo , onRemoveTodo , id ,showRemove}){
 
 
     return(
          <section className={styles.data}>
         <li className = {styles.ListItem}>{todo}
-            <button  onClick={()=> onRemoveTodo(id) }>-</button>
+           {showRemove && <button  onClick={()=> onRemoveTodo(id) }>-</button>}
         </li>
          </section>
     );
