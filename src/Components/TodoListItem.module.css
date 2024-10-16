@@ -1,0 +1,28 @@
+.data{
+    color: #333;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content:baseline;
+    align-items: center;
+    width: calc(100% - 25px);
+    text-align: center;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.ListItem{
+    padding: 0px;
+    min-width:100%;
+    display: flex ;
+    font-size: 0.7rem;
+    justify-content:space-between;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+
+.deleteButton{
+    min-width: 1rem;
+    align-items: center;
+}
