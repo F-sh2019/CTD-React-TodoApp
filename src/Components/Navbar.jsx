@@ -10,15 +10,13 @@ export default function navbar({ setShowAddForm }) {
       <Link to="/">Home</Link>
     </li>
     <li>
-          <Link to="/ShowList" >Show List</Link>
+          <Link to="/ShowList" >Search List</Link>
     </li>
     <li>
        <Link to="/AddTodo"  >Add Todo</Link>
         
     </li>
-    {/* <li>
-      <Link to="/todo">Delete Todo</Link>
-    </li> */}
+   
     </ul>
   </div>
   );
