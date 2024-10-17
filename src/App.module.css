@@ -1,0 +1,33 @@
+/* Main page layout */
+.box {
+  display: grid;
+  grid-template-rows: auto 1fr; /* First row auto (for the navbar), second row takes the remaining space */
+  grid-gap: 20px; /* Space between the rows */
+  justify-items: center;
+  align-items: start;
+  padding-top: 20px;
+  min-height: 100vh;
+  background-color: #cec9c9; /* Light background */
+}
+
+.navbar {
+  width: 100%;
+}
+
+.todocontainer {
+  background-color: #cec9c9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(122, 60, 163, 0.1);
+  padding: 20px;
+  margin: 0; /* No additional margin needed */
+ 
+  max-width: 600px;
+  position: relative;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .todocontainer {
+    width: 90%;
+  }
+}

@@ -1,13 +1,22 @@
 import styles from "./TodoListItem.module.css"
 import PropTypes from 'prop-types';
+import deleteIcon from './ico-delete.png';
+
 
 export default function TodoListItem({todo , onRemoveTodo , id ,showRemove}){
 
 
     return(
          <section className={styles.data}>
-        <li className = {styles.ListItem}>{todo}
-           {showRemove && <button  onClick={()=> onRemoveTodo(id) }>-</button>}
+        <li className = {styles.ListItem}> {todo}
+                {showRemove && (
+                    <img
+                        src={deleteIcon}
+                        alt="Remove Todo"
+                        className={styles.removeIcon}
+                        onClick={() => onRemoveTodo(id)}
+                    />
+                )}
         </li>
          </section>
     );

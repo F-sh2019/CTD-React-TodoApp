@@ -1,84 +1,38 @@
 
-
-body {
-  background-color: #f0f4f8;
-  font-family: 'Roboto', sans-serif; /* Google Fonts example */
-  color: #333;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-h1, h2, h3 {
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 16px;
-}
-
-button {
-  font-size: 14px;
-  padding: 10px;
-  cursor: pointer;
-}
-
-h1{
-  text-align: center;
-  font-size: 1rem;
-  color: #6200ea;
-}
-
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-
-
-section {
+.todo-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
-  height:auto;
+  max-width: 600px;
+  margin: 20px auto;
 }
 
-
-.test {
-  color: #039dda;
-  background-color: #f0f0f0;
-  padding: 10px;
+/* Button styles specific to to-do container */
+.todo-container button {
+  width: 100%;
+  background-color: #757de9; /* Light purple */
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
   border-radius: 5px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.homeP{
-  display:contents;               /* Use flexbox layout */
-  justify-content: center;      /* Center horizontally */
-  align-items: center;          /* Center vertically */
-  height: 100vh;                /* Set height to full viewport */
-  text-align: center;        }
-
-button {
-  background-color: #757de9;
-  color: rgb(245, 245, 247);
   border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
 }
 
-button:hover {
-  background-color: #6640a0b9;
+.todo-container button:hover {
+  background-color: #5747c0;
+}
+.image{
+  src:'./Images/ico-delete.png'
 }
 
-input[type="text"] {
-  width: calc(100% - 25px);
-  padding: 8px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
+/* Responsive layout for TodoContainer */
+@media only screen and (max-width: 768px) {
+  .todo-container {
+    padding: 15px;
+  }
 }
+

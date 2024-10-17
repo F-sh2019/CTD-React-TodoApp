@@ -3,9 +3,14 @@ import styles from "./Home.module.css"
 
 function Home() {
   return (
+    
     <div className={styles.homeP} >
-      <h1>Welcome to the Todo App</h1>
-      {/* <h2>abcd little ducks are chaseing me one is orenge one is red one is sleeping on my head now imrunning for my life cause the rred onr has a knife</h2> */}
+     
+     <div><h1>Welcome to the Todo App</h1></div>
+     <br/>
+    <h3>This app was implemented as the final project for the CDT React course
+      <br/>
+    Implemented by: Farkhondeh Shahbazi</h3>
     </div>
   );
 }

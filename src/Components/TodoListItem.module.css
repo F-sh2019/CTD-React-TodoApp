@@ -26,3 +26,15 @@
     min-width: 1rem;
     align-items: center;
 }
+
+.removeIcon {
+    
+    width: 20px; /* Adjust the size of the icon */
+    height: 20px;
+    cursor: pointer; /* Change cursor to pointer for better UX */
+    transition: transform 0.2s ease; /* Add a hover effect */
+  }
+  
+  .removeIcon:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+  }
